@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ravennpy | Nuevo estándar</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="logo raven.jpg">
+</head>
+<body>
+    <header class="site-header">
+        <div class="brand">
+            <img src="logo raven.jpg" alt="Ravenpy Logo" class="brand-logo">
+            <img src="raven letra en rojo.png" alt="Ravennpy" class="brand-type">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#colecciones">Colecciones</a></li>
+                <li><a href="#destacados">Destacados</a></li>
+                <li><a href="#editorial">Editorial</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li><button id="theme-toggle" class="theme-btn" aria-label="Cambiar tema">⚪</button></li>
+                <li><a class="btn" href="#tienda">Comprar</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" id="tienda">
+            <div class="hero-content">
+                <p class="eyebrow">EST. 2025 · ASUNCIÓN</p>
+                <h1 style="font-size: 4rem; line-height: 1; margin: 0 0 1rem; text-transform: uppercase;">NUEVO<br>ESTÁNDAR</h1>
+                <p class="lead">Esenciales urbanos. Cortes boxy y denim.</p>
+                <div class="hero-ctas">
+                    <a class="btn" href="#destacados">VER COLECCIÓN</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <img src="raven letra en rojo.png" alt="Ravenpy Studio" class="hero-type">
+            </div>
+        </section>
+
+        <section class="collection-rings" id="colecciones">
+            <article>
+                <h2>JEANS</h2>
+                <p>Denim. Cortes Straight y Baggy.</p>
+                <a href="#destacados">Ver todos</a>
+            </article>
+            <article>
+                <h2>REMERAS</h2>
+                <p>Heavyweight cotton. Fits Boxy y Cropped.</p>
+                <a href="#destacados">Ver todas</a>
+            </article>
+        </section>
+
+        <section class="product-grid" id="destacados">
+            <div class="section-head">
+                <div>
+                    <p class="eyebrow">CATÁLOGO</p>
+                    <h2>TIENDA ONLINE</h2>
+                </div>
+                <div class="filters" role="group" aria-label="Filtrar por categoría">
+                    <button class="filter-btn active" data-filter="all">TODO</button>
+                    <button class="filter-btn" data-filter="jeans">JEANS</button>
+                    <button class="filter-btn" data-filter="remeras">REMERAS</button>
+                </div>
+            </div>
+            <div class="grid" id="productGrid"></div>
+        </section>
+
+        <section class="editorial" id="editorial">
+            <div>
+                <p class="eyebrow">FITS & TALLES</p>
+                <h2>GUÍA RÁPIDA</h2>
+                <p>Todos nuestros cortes son relajados. Si buscas un fit más ajustado, baja un talle.</p>
+                <ul>
+                    <li><strong>Boxy Tee:</strong> Corta y ancha. Hombros caídos.</li>
+                    <li><strong>Cropped Tee:</strong> Al cuerpo, largo a la cintura.</li>
+                    <li><strong>Baggy Jean:</strong> Pierna ancha desde la cadera.</li>
+                </ul>
+            </div>
+            <div class="editorial-card">
+                <span class="card-label">ENVÍOS</span>
+                <p>Envíos a todo el país vía encomienda. Delivery en Asunción y Gran Asunción en 24hs.</p>
+            </div>
+        </section>
+
+        <section class="lookbook">
+            <div class="section-head">
+                <div>
+                    <p class="eyebrow">LOOKBOOK</p>
+                    <h2>LOOKS</h2>
+                </div>
+                <div class="lookbook-controls" role="group" aria-label="Controles del lookbook">
+                    <button id="prevLook" aria-label="Anterior">&#8592;</button>
+                    <button id="nextLook" aria-label="Siguiente">&#8594;</button>
+                </div>
+            </div>
+            <div class="lookbook-track" id="lookbookTrack"></div>
+        </section>
+
+        <section class="testimonios">
+            <article>
+                <p>“La calidad del algodón es increíble, súper pesado.”</p>
+                <span>— Cliente Verificado</span>
+            </article>
+            <article>
+                <p>“El fit de los baggy jeans es exactamente lo que buscaba.”</p>
+                <span>— Cliente Verificado</span>
+            </article>
+        </section>
+
+        <section class="contacto" id="contacto">
+            <div>
+                <p class="eyebrow">CONTACTO</p>
+                <h2>HACER PEDIDO</h2>
+                <p>Escribinos al WhatsApp para coordinar pago y envío.</p>
+                <a href="https://wa.me/595000000" class="btn">IR A WHATSAPP</a>
+            </div>
+            <div class="contact-meta">
+                <div>
+                    <span class="card-label">UBICACIÓN</span>
+                    <p>Asunción, PY</p>
+                </div>
+                <div>
+                    <span class="card-label">SOCIAL</span>
+                    <a href="https://www.instagram.com/ravennpyy/" target="_blank" rel="noopener">@ravennpyy</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div>
+            <span class="brand-name">RAVENPY</span>
+            <p>© 2025</p>
+        </div>
+    </footer>
+
+    <div id="cursor-raven">🐦‍⬛</div>
+    <script src="script.js" defer></script>
+</body>
+</html>
